@@ -3,7 +3,8 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { convertToBibitem, parseReference } from './Reference_Formater/IEEE';
 import Footer from './components/Footer';
-
+import Header from './components/Header';
+import Home from './pages/Home';
 export default function App() {
   const headerRef = useRef(null);
   const spanRefs = useRef([]);
@@ -35,10 +36,10 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-white text-gray-900 font-inter">
-      <header ref={headerRef} className="h-16 bg-blue-900 w-full text-4xl text-center text-white flex items-center justify-center">
-        Reference Generator
-      </header>
+    
+    <div className="flex flex-col  min-h-screen bg-white text-gray-900 font-inter">
+      <Header/>
+      <Home/>
       <div className="flex gap-3 my-4 justify-center">
         {['IEEE', 'Springer'].map((text, index) => (
           <span
