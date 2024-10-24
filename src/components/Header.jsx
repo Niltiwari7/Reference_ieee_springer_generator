@@ -72,7 +72,7 @@ function Header() {
           </Link>
           <Link 
             to="/guide" 
-            className="text-lg font-black text-gray-700 hover:text-blue-500 transition duration-300"
+            className="text-lg font-black text-gray-700 hover:text-blue-500 transition duration-300 hidden"
             onClick={toggleMenu}
           >
             Guide
