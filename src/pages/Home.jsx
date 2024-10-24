@@ -13,7 +13,7 @@ function Home() {
 
     return (
         <div>
-            <div className="p-10 w-full"></div>
+            <div className="p-5 w-full"></div>
             {/* Pass scroll function to Hero */}
             <Hero onGetStartedClick={scrollToConversionTool} />
             <div className="p-10 w-full"></div>
